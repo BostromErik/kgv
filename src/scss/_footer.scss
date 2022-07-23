@@ -1,0 +1,47 @@
+.kgv-footer{
+    display: flex;
+   
+
+    padding: 1em;
+    min-height: 300px;
+    background-color: black;
+    margin-top:auto;
+    border-top: 10px solid $old-burgundy;
+    .kgv-footer-container{
+        display: flex;
+        justify-content: space-between;
+     
+        width:100%;
+        .kgv-single-footer-item{
+            display: flex;
+            flex-direction: column;
+            padding:1em 0em;
+            h3{
+                margin-bottom: 15px;
+            }
+            .kgv-location{
+                margin-bottom: 10px;
+            }
+        }
+        .kgv-logo-container{
+            max-width: 350px;
+        }
+    }
+
+    .kgv-social-icons{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            display: block;
+            margin-left: 13px;
+            transition: 0.3s ease-in;
+            &:hover{
+                color: $ming;
+            }
+            i{
+                font-size: 2.7rem;
+            }
+        }
+    }   
+}
+
