@@ -16,18 +16,8 @@
             <?php endif; ?>
         </div>
         <div class="kgv-single-footer-item">
-            <div class="kgv-logo-container">
-                <?php 
-                    $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                    
-                    if ( has_custom_logo() ) {
-                        echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                    } else {
-                        echo '<h1>' . get_bloginfo('name') . '</h1>';
-                    }
-                ?>
-            </div>
+            <div class="kgv-google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504.87235323285546!2d16.51364487326093!3d59.591564452066514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e6176cba5f6a5%3A0x2f7590fc7e14270a!2sSlakterigatan%2010%2C%20721%2032%20V%C3%A4ster%C3%A5s!5e0!3m2!1ssv!2sse!4v1658691221464!5m2!1ssv!2sse" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
         </div>
         <div class="kgv-single-footer-item">
            

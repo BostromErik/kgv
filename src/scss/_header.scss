@@ -3,9 +3,9 @@
     display: flex;
     align-items: center;
     padding:1em;
-    background-color: $black;
+    background-color: $xanadu;
     height:220px;
-    border-bottom: 10px solid $old-burgundy;
+    border-bottom: 5px solid $border;
     > .container{
         display: flex;
         align-items: center;
@@ -24,7 +24,7 @@
             margin-left: 13px;
             transition: 0.3s ease-in;
             &:hover{
-                color: $ming;
+                color: $shadow;
             }
             i{
                 font-size: 1.7rem;
@@ -67,7 +67,7 @@
                     transition: 0.3s ease-in;
                     font-family: 'Dancing Script', cursive;
                     &:hover{
-                        color: $ming;
+                        color: $shadow;
                     }
                    
                 } 
@@ -87,7 +87,7 @@
                         left:0px;
                         bottom:-10px;
                         height:3px;
-                        border-bottom: 3px solid $ming;
+                        border-bottom: 3px solid $shadow;
                     }
                 }
                 

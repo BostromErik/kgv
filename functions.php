@@ -10,6 +10,8 @@ function kgv_custom_logo_setup() {
         'unlink-homepage-logo' => false, 
     );
     add_theme_support('custom-logo');
+
+    add_theme_support( 'post-thumbnails', array( 'post', 'page', 'projects' ));
 }
 add_action('after_setup_theme', 'kgv_custom_logo_setup');
 
@@ -34,3 +36,22 @@ function kgv_add_menu(){
     );
 }
 add_action('init', 'kgv_add_menu');
+
+function kgv_custom_post_type()
+{
+    register_post_type( 'projects',
+        array(
+            'labels' => array(
+                'name' => __( 'Projects' ),
+                'singular_name' => __( 'Project' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'projekt'),
+            'show_in_rest' => true,
+            'supports' => array('editor', 'thumbnail', 'title'),
+  
+        )
+    );
+}
+add_action('init', 'kgv_custom_post_type');
